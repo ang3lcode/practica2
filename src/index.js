@@ -1,7 +1,4 @@
-// const archivoJson = "ruta/archivo.json"; // Ruta al archivo .json
-// const contenidoJson = obtenerContenidoJson(archivoJson); // Función para leer el contenido del archivo
+// import datos from './dato.json';
+// console.log(datos.aqui)
 
-// const objetoJson = JSON.parse(contenidoJson);
-// console.log(objetoJson);
-
-console.log('aqui no es juego ')
+console.log("aqui no es juego ");
