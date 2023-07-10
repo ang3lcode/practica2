@@ -11,5 +11,4 @@ export const Home = () => {
     `;
     return view;
   };
-  
  

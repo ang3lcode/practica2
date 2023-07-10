@@ -1,4 +1,8 @@
 // import datos from './dato.json';
 // console.log(datos.aqui)
 
-console.log("aqui no es juego ");
+import router from './routes/index';
+
+window.addEventListener('load', router);
+
+console.log("hi");
