@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -17,6 +19,10 @@ module.exports = {
             use:{
                 loader: 'babel-loader'
             }
+        },{
+            test: /\.css$/i,
+            use:[MiniCssExtractPlugin.loader,
+            'css-leader']
         }]
     },
     plugins: [
@@ -27,6 +33,11 @@ module.exports = {
                 filename: './index.html',
             }
         ),
+        // new CopyWebpackPlugin({
+        //     patterns: [{ from: './src/styles/styles.css',
+        //     to: '' }],
+        //   })
+        new MiniCssExtractPlugin(),
     ]
 
 }
