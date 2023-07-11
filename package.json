@@ -1,11 +1,16 @@
 {
   "name": "cientifico",
   "version": "1.0.0",
+  "repository": {
+    "url": "git+https://github.com/ang3lcode/practica2.git"
+  },
   "description": "simple page application ",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development"
+    "start": "webpack-dev-server --open --mode development",
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "javascript"
